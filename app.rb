@@ -8,7 +8,7 @@ get '/newteam' do
 end
 
 post '/team' do
-  @coach = params[:coach]
+  @coach = params[:coach].to_s
   erb :team
 end
 
